@@ -1,9 +1,9 @@
 #!/bin/bash
 
 if [ -z ${1} ]; then
-  INSTALL_PATH=${1}
-else
   INSTALL_PATH="`pwd`/hoursapp"
+else
+  INSTALL_PATH=${1}
 fi
 
 sudo yum -y install python git
