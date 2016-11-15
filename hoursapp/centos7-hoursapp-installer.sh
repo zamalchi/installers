@@ -1,6 +1,10 @@
 #!/bin/bash
 
-INSTALL_PATH=${1}
+if [ -z ${1} ]; then
+  INSTALL_PATH=${1}
+else
+  INSTALL_PATH=hoursapp
+fi
 
 sudo yum -y install python git
 
